@@ -22,6 +22,11 @@
       color: aqua;
       font-style: italic;
     }
+
+    #mainContainer {
+      display: grid;
+      place-items: center;
+    }
   </style>
 
   <head>
@@ -31,44 +36,39 @@
     <link rel="icon" type="images" href="images/favicon.jpg"
   </head>
   <body>
-    <input
-      type="image"
-      src="images/scplogo.jpg"
-      style="width: 350px; height: 350px; margin-top: 240px"
-      onclick="LogoClick()"
-    />
+    <div id="mainContainer">
+      <input
+        type="image"
+        src="images/scplogo.jpg"
+        style="width: 350px; height: 350px; margin-top: 180px"
+        onclick="LogoClick()"
+      />
 
-    <h1 style="color: white; font-size: 60px; font-family: SCPFont">
-      <em>Area-79 Department Portal</em>
-    </h1>
+      <h1 style="color: white; font-size: 60px; font-family: SCPFont">
+        <em>Area-79 Department Portal</em>
+      </h1>
 
-    <a
-      href="securitylogin.html"
-      target="_blank"
-      style="font-size: 50px; color: rgb(107, 107, 107)"
-      >Security Department Hub</a
-    >
+      <a
+        href="securitylogin.html"
+        target="_blank"
+        style="font-size: 50px; color: rgb(107, 107, 107)"
+        >Security Department Hub</a
+      >
 
-    <a
-      href="medicallogin.html"
-      style="margin-top: 50px; font-size: 50px; color: rgb(103, 217, 255)"
-      target="_blank"
-      >Medical Department Hub
-    </a>
+      <a
+        href="medicallogin.html"
+        style="margin-top: 50px; font-size: 50px; color: rgb(103, 217, 255)"
+        target="_blank"
+        >Medical Department Hub
+      </a>
 
-    <a
-      href="engineeringlogin.html"
-      style="margin-top: 50px; font-size: 50px; color: lightgray"
-      target="_blank"
-      >Engineering Department Hub</a
-    >
-
-    <a
-      href="scpdatabaselogin.html"
-      style="margin-top: 50px; font-size: 50px; color: rgb(255, 0, 0)"
-      target="_blank"
-      >SCP Database</a
-    >
+      <a
+        href="engineeringlogin.html"
+        style="margin-top: 50px; font-size: 50px; color: lightgray"
+        target="_blank"
+        >Engineering Department Hub</a
+      >
+    </div>
   </body>
 
   <script>
